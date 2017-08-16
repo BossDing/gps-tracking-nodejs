@@ -11,7 +11,8 @@ This module let you easily create listeners for your GPS tracking devices. You c
 # Installation   
 With package manager [npm](http://npmjs.org/):
 
-	npm install gps-tracking
+        cd path/to/gps-tracking-nodejs/
+	npm install 
 
 # Usage
 Once you have installed the package, you can use it like: 
@@ -50,6 +51,8 @@ var server = gps.server(options,function(device,connection){
 });
 ```
 
+And you can get track trace on http://localhost:55023 (If your GPS receive port is 5023).
+
 ### Step by step
 
 1) [Install Node](https://nodejs.org/)
@@ -61,7 +64,7 @@ var server = gps.server(options,function(device,connection){
 4) Install the package in the project folder
 ``` bash
 cd /path/to/my/project
-npm install gps-tracking	
+npm install https://github.com/cnberg/gps-tracking-nodejs/tree/master/
 ```
 5) Run your server
 ``` bash
