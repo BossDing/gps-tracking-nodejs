@@ -8,6 +8,8 @@ This module let you easily create listeners for your GPS tracking devices. You c
 - GT06
 - TK103
 
+You can get those GPS tracker from 淘宝(Taobao.com), BUT please make sure you get the sms commamd(such as SERVER,666666,0,111.222.333.4444,5022,0#) to change the device's ip/port for report GPS location.
+
 # Installation   
 
 ## Step by step
