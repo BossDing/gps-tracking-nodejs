@@ -9,12 +9,26 @@ This module let you easily create listeners for your GPS tracking devices. You c
 - TK103
 
 # Installation   
-With package manager [npm](http://npmjs.org/):
 
-        cd path/to/gps-tracking-nodejs/
-	npm install 
+## Step by step
 
-# Usage
+1) [Install Node](https://nodejs.org/)
+
+2) Create a folder for your project
+
+3) Copy the example code above in a .js file like server.js
+
+4) Install the package in the project folder
+``` bash
+cd /path/to/my/project
+npm install https://github.com/cnberg/gps-tracking-nodejs/tree/master/
+```
+5) Run your server (server.js example below)
+``` bash
+node server.js
+```
+
+## Usage
 Once you have installed the package, you can use it like: 
 
 ``` javascript
@@ -53,23 +67,7 @@ var server = gps.server(options,function(device,connection){
 
 And you can get track trace on http://localhost:55023 (If your GPS receive port is 5023).
 
-### Step by step
 
-1) [Install Node](https://nodejs.org/)
-
-2) Create a folder for your project
-
-3) Copy the example code above in a .js file like server.js
-
-4) Install the package in the project folder
-``` bash
-cd /path/to/my/project
-npm install https://github.com/cnberg/gps-tracking-nodejs/tree/master/
-```
-5) Run your server
-``` bash
-node server.js
-```
 # Overview
 With this package you are going to create a tcp server that listens on a open port of your server/computer for a specific gps device model. 
 For example, you are going to listen on port 8090 for 'TK103 gps-trackers'. 
